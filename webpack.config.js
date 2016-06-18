@@ -22,6 +22,10 @@ module.exports = {
         loader: 'babel?presets=es2015',
         include: projectRoot,
         exclude: /node_modules/
+      },
+      {
+        test: /vux.src.*?js$/,
+        loader: 'babel'
       }
     ]
   },

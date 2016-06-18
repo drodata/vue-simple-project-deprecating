@@ -1,19 +1,16 @@
 <template>
-  <div class="va">
-    Hello Vux A
+  <div>
+    <icon type="success"></icon>
   </div>
 </template>
 
 <script>
-/*
-import ComponentA from './ComponentA.vue'
-import AppFooter from './AppFooter.vue'
-
+import Icon from 'vux/src/components/icon'
 export default {
-  components: {
-    ComponentA,
-    AppFooter
-  }
+  components: {Icon}
 }
-*/
 </script>
+
+<style>
+@import '~vux/dist/vux.css';
+</style>
