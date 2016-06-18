@@ -10,6 +10,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.vue'],
+    alias: {
+        'vux-components': 'vux/src/components/'
+    }
   },
   module: {
     loaders: [

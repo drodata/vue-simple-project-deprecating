@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // require a *.vue component
 import Vux from './components/Vux'
-import VuxA from './components/VuxA'
+import VuxIcon from './components/VuxIcon'
+import VuxTab from './components/VuxTab'
 import VuxB from './components/VuxB'
 import AppFooter from './components/AppFooter'
 
@@ -26,11 +27,11 @@ router.map({
     '/vux': {
         component: Vux,
         subRoutes: {
-            '/a': {
-                component: VuxA
+            '/icon': {
+                component: VuxIcon
             },
-            '/b': {
-                component: VuxB
+            '/tab': {
+                component: VuxTab
             }
         }
     },
@@ -41,6 +42,4 @@ router.map({
         component: Bar
     }
 })
-// 现在我们可以启动应用了！
-// 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。
 router.start(App, '#app')
